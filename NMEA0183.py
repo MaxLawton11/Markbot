@@ -7,7 +7,7 @@ import binascii
 from threading import Thread
 
 
-class NMEA0183():
+class NMEA0183 :
 	def __init__(self, location, baud_rate, timeout):
 		'''
 		Initiates variables.
