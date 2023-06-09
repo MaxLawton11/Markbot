@@ -1,6 +1,6 @@
 class Compass :
-    def __init__(self):
+    def __init__(self) :
         pass
-    def getHeading(self):
+    def getHeading(self) :
         pass
         
