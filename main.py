@@ -275,7 +275,7 @@ class NMEA0183 :
 import time
 
 serial_location = '/dev/ttyUSB0'
-serial_baudrate = 4800
+serial_baudrate = 9600
 serial_timeout = 5
 
 #Provides the required serial device info
