@@ -10,6 +10,6 @@ bytesize=serial.EIGHTBITS,
 timeout=1
 )
 
-while True:
+for i in range(100)
     x=ser.readline()
     print(x)
