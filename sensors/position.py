@@ -27,3 +27,7 @@ class GPS :
                 self.session.close()
                 print("GPSD has terminated")
                 break
+            
+class Tester :
+    def __init__(self) :
+        print('we worken from position')

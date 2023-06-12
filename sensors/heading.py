@@ -6,5 +6,5 @@ class Compass :
     
 class Tester :
     def __init__(self) :
-        print('we worken')
+        print('we worken from heading')
         
