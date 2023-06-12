@@ -1,2 +1,4 @@
+from sensors import heading
+
 if __name__ == '__main__' :
-   print("Test log")
+   test = heading.Tester()

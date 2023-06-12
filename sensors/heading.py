@@ -3,4 +3,8 @@ class Compass :
         pass
     def getHeading(self) :
         pass
+    
+class Tester :
+    def __init__(self) :
+        print('we worken')
         
