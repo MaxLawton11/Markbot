@@ -1,4 +1,4 @@
-import gps, WATCH_ENABLE
+from gps import gps, WATCH_ENABLE
 
 class GPS :
     def __init__(self) :
