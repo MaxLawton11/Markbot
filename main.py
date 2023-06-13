@@ -1,4 +1,3 @@
-from turtle import pos
 from sensors import heading, position
 
 if __name__ == '__main__' :
