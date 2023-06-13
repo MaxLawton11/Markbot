@@ -22,3 +22,4 @@ if __name__ == '__main__' :
          print("Speed:", speed)
          print("Altitude:", altitude)
          print("Altitude Error:", altitude_error)
+         print("-"*20)
