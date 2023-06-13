@@ -37,7 +37,6 @@ class GPS :
             # stopped
             self.session.close()
             return None
-            
-class Tester :
-    def __init__(self) :
-        print('we worken from position')
+        
+# the command from the gps is `cgps`
+# it will give a nice table for you to look at
