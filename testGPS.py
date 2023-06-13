@@ -1,10 +1,12 @@
 import gps
 
+print(1)
+
 # Connect to the GPSd service
 session = gps.gps("localhost", "2947")
 session.stream(gps.WATCH_ENABLE | gps.WATCH_NEWSTYLE)
 
-print('--Started--')
+print(2)
 
 # Main loop
 while True:
