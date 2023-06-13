@@ -4,7 +4,7 @@ if __name__ == '__main__' :
    test_pos = position.GPS()
    while True :
       
-      if test_pos:
+      if test_pos != None:
          # Access the desired variables
          latitude = test_pos.latitude
          longitude = test_pos.longitude

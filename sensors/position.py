@@ -30,6 +30,14 @@ class GPS :
                 self.altitude = report.get('alt')
                 self.altitude_error = report.get('epv')
                 
+                self.latitude = report['lat']
+                self.longitude = report['lon']
+                self.latitude_error = report['epx']
+                self.longitude_error = report['epy']
+                self.speed = report['speed']
+                self.altitude = report['alt']
+                self.altitude_error = report['epv']
+                
                 # Return the raw data
                 return report
             
