@@ -2,9 +2,10 @@ from gps import gps, WATCH_ENABLE
 
 class GPS :
     def __init__(self) :
-        # Connect to the GPSd service
+        # connect to the GPSd service
         self.session = gps(mode=WATCH_ENABLE)
         
+        # store data in object
         self.latitude = None
         self.longitude = None
         self.latitude_error = None
@@ -15,13 +16,12 @@ class GPS :
         
     def getPosition(self) :
         try:
-            # Wait for new data
+            # wait for new data
             report = self.session.next()
-        
             
             # Check if the report is a TPV (Time-Position-Velocity) report
             if report['class'] == 'TPV':
-                # Update the instance variables
+                # update variables
                 self.latitude = report.get('lat')
                 self.longitude = report.get('lon')
                 self.latitude_error = report.get('epx')
@@ -34,9 +34,8 @@ class GPS :
                 return report
             
         except StopIteration:
-            # End of file reached
+            # stopped
             self.session.close()
-            print("GPSD has terminated")
             return None
             
 class Tester :
