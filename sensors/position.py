@@ -6,6 +6,7 @@ class GPS :
         self.session = gps(mode=WATCH_ENABLE)
         
         # store data in object
+        self.time = None
         self.latitude = None
         self.longitude = None
         self.latitude_error = None
@@ -19,9 +20,10 @@ class GPS :
             # wait for new data
             report = self.session.next()
             
-            # Check if the report is a TPV (Time-Position-Velocity) report
+            # check if the report is a TPV (Time-Position-Velocity) report
             if report['class'] == 'TPV':
                 # update variables
+                self.time = report.get('time')
                 self.latitude = report.get('lat')
                 self.longitude = report.get('lon')
                 self.latitude_error = report.get('epx')

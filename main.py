@@ -6,6 +6,7 @@ if __name__ == '__main__' :
       result = test_pos.getPosition()
       if result != None:
          # Access the desired variables
+         time = test_pos.time
          latitude = test_pos.latitude
          longitude = test_pos.longitude
          latitude_error = test_pos.latitude_error
@@ -15,6 +16,7 @@ if __name__ == '__main__' :
          altitude_error = test_pos.altitude_error
 
          # Use the variables as needed
+         print("Time:", time)
          print("Latitude:", latitude)
          print("Longitude:", longitude)
          print("Latitude Error:", latitude_error)
