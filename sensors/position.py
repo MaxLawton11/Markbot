@@ -43,6 +43,6 @@ class GPS :
             return None
         
     def closeConnection(self) :
-        # stopped
+        # when done
         self.session.close()
         return None
