@@ -1,6 +1,6 @@
 from sensors import heading, position
 
-if __name__ == '__main__' :
+def main() :
    test_pos = position.GPS()
    while True :
       result = test_pos.getPosition()
@@ -25,3 +25,6 @@ if __name__ == '__main__' :
          print("Altitude:", altitude, "m")
          print("Altitude Error:", altitude_error, "m")
          print("-"*20)
+
+if __name__ == '__main__' :
+   main()
