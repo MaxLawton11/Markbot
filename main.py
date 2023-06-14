@@ -1,19 +1,19 @@
 from sensors import heading, position
 
 def main() :
-   test_pos = position.GPS()
+   pos = position.GPS()
    while True :
-      result = test_pos.getPosition()
+      result = pos.getPosition()
       if result != None:
          # Access the desired variables
-         time = test_pos.time
-         latitude = test_pos.latitude
-         longitude = test_pos.longitude
-         latitude_error = test_pos.latitude_error
-         longitude_error = test_pos.longitude_error
-         speed = test_pos.speed
-         altitude = test_pos.altitude
-         altitude_error = test_pos.altitude_error
+         time = pos.time
+         latitude = pos.latitude
+         longitude = pos.longitude
+         latitude_error = pos.latitude_error
+         longitude_error = pos.longitude_error
+         speed = pos.speed
+         altitude = pos.altitude
+         altitude_error = pos.altitude_error
 
          # Use the variables as needed
          print("Time:", time)
