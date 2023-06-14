@@ -2,7 +2,7 @@ from sensors import heading, position
 
 def main() :
    pos = position.GPS()
-   while True :
+   for i in range(100) :
       result = pos.getPosition()
       if result != None:
          # Access the desired variables
@@ -25,6 +25,8 @@ def main() :
          print("Altitude:", altitude, "m")
          print("Altitude Error:", altitude_error, "m")
          print("-"*20)
+   
+   pos.closeConnection()
 
 if __name__ == '__main__' :
    main()
