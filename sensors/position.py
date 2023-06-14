@@ -1,5 +1,7 @@
 from gps import gps, WATCH_ENABLE
 
+# class to cheack postion using the usb gps
+# pulls data from equivalent command `cgps`
 class GPS :
     def __init__(self) :
         # connect to the GPSd service
@@ -32,13 +34,10 @@ class GPS :
                 self.altitude = report.get('alt')
                 self.altitude_error = report.get('epv')
                 
-                # Return the raw data
+                # return the raw data
                 return report
             
         except StopIteration:
             # stopped
             self.session.close()
             return None
-        
-# the command from the gps is `cgps`
-# it will give a nice table for you to look at
