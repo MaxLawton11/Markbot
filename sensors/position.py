@@ -38,7 +38,7 @@ class GPS :
                 return report
             
         except StopIteration:
-            # stopped
+            # looped stopped
             self.session.close()
             return None
         
