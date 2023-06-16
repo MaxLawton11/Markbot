@@ -25,7 +25,8 @@ def main() :
          print("Altitude:", altitude, "m")
          print("Altitude Error:", altitude_error, "m")
          print("-"*20)
-   
+         
+   # when done release gps 
    pos.closeConnection()
 
 if __name__ == '__main__' :
