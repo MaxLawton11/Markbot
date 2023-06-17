@@ -3,14 +3,14 @@ import time
 import math
 
 # HMC5883L address
-address = 0x0D
+address = 0x1E
 
 # Register addresses
 config_register = 0x00
 data_register = 0x03
 
 # Create I2C bus object for bus 3
-bus = smbus.SMBus(1)
+bus = smbus.SMBus(3)
 
 # Function to read signed 16-bit data from two consecutive registers
 def read_data(register):
