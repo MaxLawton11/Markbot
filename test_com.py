@@ -2,7 +2,7 @@ import smbus
 import time
 
 # HMC5883L address
-address = 0x1E
+address = 0x0D
 
 # Register addresses
 config_register = 0x00
