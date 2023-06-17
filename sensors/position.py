@@ -1,4 +1,4 @@
-from gps import gps, WATCH_ENABLE
+from gps import gps, WATCH_ENABLE # make sure to intall gps with pip3
 
 # class to cheack postion using the usb gps
 # pulls data from equivalent command `cgps`
