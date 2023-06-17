@@ -32,9 +32,9 @@ while True:
 
     # Print the raw values
     print("Raw Magnetometer Data:")
-    print("X: {0}".format(x))
-    print("Y: {0}".format(y))
-    print("Z: {0}".format(z))
+    print(f"X: {x}")
+    print(f"Y: {y}")
+    print(f"Z: {z}")
 
     # Calculate heading in degrees
     heading = (180 * math.atan2(y, x)) / math.pi
