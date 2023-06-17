@@ -1,5 +1,6 @@
 import smbus
 import time
+import math
 
 # HMC5883L address
 address = 0x0D
