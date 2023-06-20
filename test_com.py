@@ -8,7 +8,7 @@ config_register = 0x00
 data_register = 0x03
 
 # Create I2C bus object
-bus = smbus.SMBus(1)  # Use 1 for Raspberry Pi Model B+
+bus = smbus.SMBus(3)  # Use 1 for Raspberry Pi Model B+
 
 # Set the configuration register
 bus.write_byte_data(address, config_register, 0x00)
