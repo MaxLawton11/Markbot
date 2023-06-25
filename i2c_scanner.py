@@ -4,10 +4,10 @@ import smbus
 # loop through busses
 for i_bus in [1,3] :
     
-    # Create I2C bus object
+    # create I2C bus object
     bus = smbus.SMBus(i_bus)  # Use 1 for Raspberry Pi Model B+
 
-    # Scan for devices
+    # scan for devices
     for address in range(0x03, 0x78):
         try:
             bus.read_byte(address)
