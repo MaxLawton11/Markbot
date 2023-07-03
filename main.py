@@ -5,7 +5,7 @@ def main() :
    for i in range(100) :
       result = pos.getPosition()
       if result != None:
-         # Access the desired variables
+         # access the desired variables
          time = pos.time
          latitude = pos.latitude
          longitude = pos.longitude
