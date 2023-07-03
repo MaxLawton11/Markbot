@@ -15,7 +15,7 @@ def main() :
          altitude = pos.altitude
          altitude_error = pos.altitude_error
 
-         # Use the variables as needed
+         # use the variables as needed
          print("Time:", time)
          print("Latitude:", latitude)
          print("Longitude:", longitude)
