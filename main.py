@@ -2,7 +2,7 @@ from sensors import heading, position
 
 def main() :
    pos = position.GPS()
-   for i in range(10) :
+   for i in range(10) : # this is for tersing. will stop after 10 cheaks of poas, note some might be blank so 10 might not be printed
       result = pos.getPosition()
       if result != None:
          # access the desired variables
