@@ -2,7 +2,7 @@ from sensors import heading, position
 
 def main() :
    pos = position.GPS()
-   for i in range(100) :
+   for i in range(10) :
       result = pos.getPosition()
       if result != None:
          # access the desired variables
